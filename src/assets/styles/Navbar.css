@@ -1,0 +1,58 @@
+.navbar {
+    height: 100px;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(254, 254, 254);
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    z-index: 100;
+}
+
+.brand-icon {
+    grid-column: 2 / span 2;
+    justify-self: start;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand-icon span:nth-of-type(1){
+    padding: 0;
+    margin: auto 0;
+    margin-right: 4px; 
+    font-size: 32px;
+    line-height: 0px;
+}
+
+.resume-button {
+    grid-column: 10 / span 2;
+    justify-self: end;
+}
+
+.resume-button a{
+    background: var(--Primary-Black, #000);
+    color: var(--Primary-White, #fff);
+    padding: 16px 18px;
+    font-size: 16px;
+}
+
+.resume-button a:hover{
+    background: var(--Primary-Neutral, #404040);
+}
+
+.nav-links {
+    grid-column: 5 / span 4;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}

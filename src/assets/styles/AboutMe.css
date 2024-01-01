@@ -1,0 +1,55 @@
+.aboutme{
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+    padding: 60px 0;
+    min-height: calc(100vh);
+}
+
+.aboutme-graphic{
+    grid-column: 2 / span 5;
+    grid-row: 1 / span 1;
+    background-image: url("./images/aboutme.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutme-content{
+    grid-column: 7 / span 5;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 0 32px;
+}
+
+.aboutme-title{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: var(--Primary-Black, #000);
+    justify-self: start;
+    margin: 24px 0;
+}
+
+.aboutme-title span{
+    font-weight: 700;
+}
+
+.aboutme-text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--Zinc-500, #71717A);
+    text-align: justify;
+    margin: 24px 0;
+}

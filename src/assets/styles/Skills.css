@@ -1,0 +1,110 @@
+.skills{
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+    min-height:auto;
+}
+
+.skills-title{
+    grid-column: 2 / span 10;
+    grid-row: 1 / span 1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.skills-title span{
+    font-weight: 700;
+}
+
+.skills-badges-view{
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 4;
+    display: flex;
+    align-content: start;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0 84px;
+}
+
+.skills-badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    max-width: 160px;
+    height: 160px;
+    margin: 15px;
+    border: 3px solid var(--Primary-Black, #000);
+    overflow: hidden;
+}
+
+.skills-badge p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.skills-badge .fa-brands, .skills-badge .material-symbols-outlined{
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.skills-badge:hover{
+    background-color: var(--Primary-Black, #000);
+    color: var(--Primary-White, #fff);
+}
+
+.skills-badge:hover .fa-react{
+    color: #61DBFB;
+}
+
+.skills-badge:hover .fa-node-js{
+    color: #5ddd5d;
+}
+
+.skills-badge:hover .fa-square-js{
+    color: #F7DF1E;
+}
+
+.skills-badge:hover .fa-css3-alt{
+    color: #1888d8;
+}
+
+.skills-badge:hover .fa-sass{
+    color: #CC6699;
+}
+
+.skills-badge:hover .fa-bootstrap{
+    color: #7952B3;
+}
+
+.skills-badge:hover .fa-git-alt{
+    color: #F05032;
+}  
+
+.skills-badge:hover .fa-java{
+    color: #FF0000;
+}
+
+.skills-badge:hover .fa-php{
+    color: #777BB4;
+}
+
+.skills-badge:hover .fa-docker{
+    color: #2496ed;
+}
+
+.skills-badge:hover .fa-aws{
+    color: #ff9a00;
+}
+
+.skills-badge:hover .fa-figma{
+    color: #F24E1E;
+}

@@ -1,0 +1,97 @@
+.experience{
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+    background-color: var(--Primary-Black, #000);
+    color: var(--Primary-White, #fff);
+}
+
+.experience-title{
+    grid-column: 2 / span 10;
+    grid-row: 1 / span 1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.experience-title span{
+    font-weight: 700;
+}
+
+.experience-view{
+    grid-column: 2 / span 10;
+    display: flex;
+    align-content: start;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0 84px;
+}
+
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    min-width: 100%;
+    margin: 16px 0;
+    border: 2px solid var(--Zinc-500, #71717A);
+    border-radius: 8px;
+    padding: 32px 24px;
+}
+
+.exp-card-title{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.exp-card-illus{
+    margin-right: 25px;
+}
+
+.exp-card-illus img{
+    height: 38px;
+    width: auto;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.exp-card-illus i{
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.exp-card-name{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    flex-grow: 1;
+    margin: 0;
+}
+
+
+.exp-card-duration{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--Zinc-300, #D4D4D8);
+    margin: 0;
+}
+
+.exp-card-description{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--Zinc-300, #D4D4D8);
+    text-align: justify;
+    margin: 0;
+}
