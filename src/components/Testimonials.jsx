@@ -9,19 +9,22 @@ const Testimonials = () => {
             </p>
             <div className="testimonial-view">
                 <TestimonialCard 
-                    description='I recently had to jump on 10+ different calls across eight different countries to find the right owner.'
+                    description="In a global collaboration spanning eight countries, they emerged as the go-to Full Stack Developer. Their ability to navigate complex challenges and streamline communication is unparalleled"
                     name='Evie Spears'
                     position='Full Stack Developer'
+                    image='./images/testimonial-1.jpg'
                 />
                 <TestimonialCard 
-                    description='I recently had to jump on 10+ different calls across eight different countries to find the right owner.'
-                    name='Evie Spears'
-                    position='Full Stack Developer'
+                    description="They tackle coding challenges with finesse, delivering efficient solutions. Their adaptability and commitment to excellence make them an invaluable asset."
+                    name='Adriana Green'
+                    position='Software Engineer'
+                    image='./images/testimonial-2.jpg'
                 />
                 <TestimonialCard 
-                    description='I recently had to jump on 10+ different calls across eight different countries to find the right owner.'
-                    name='Evie Spears'
-                    position='Full Stack Developer'
+                    description="They orchestrates seamless front-end to back-end integration, ensuring project success. Ready to bring innovation and expertise to your team."
+                    name='John Doe'
+                    position='DevOps Engineer'
+                    image='./images/testimonial-3.jpg'
                 />
             </div>
         </div>
