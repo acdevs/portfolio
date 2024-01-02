@@ -1,14 +1,15 @@
 import '../assets/styles/Footer.css'
+import BrandIcon from './BrandIcon'
 
 const Footer = () => {
+
+    let currentYear = new Date().getFullYear();
+
     return (
         <div className='footer'>
-            <p className="footer-title">
-                <span className="material-symbols-outlined">circle</span>
-                <span>Personal</span>
-            </p>
+            <BrandIcon name='Personal'/>
             <p className="footer-description">
-                <p>&copy; 2024 Aman Chandra. All rights reserved.</p>
+                <p>&copy; {currentYear} Aman Chandra.</p>
                 <p>Made with <i className="fa-solid fa-heart"></i></p>
             </p>
         </div>

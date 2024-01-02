@@ -1,3 +1,8 @@
+.experience *::selection{
+    background-color: #a072fb;
+    color: #000;
+}
+
 .experience{
     grid-column: 1 / span 12;
     display: grid;
@@ -20,6 +25,11 @@
 
 .experience-title span{
     font-weight: 700;
+}
+
+
+.experience-view *{
+    user-select: none;
 }
 
 .experience-view{
@@ -60,11 +70,6 @@
     height: 38px;
     width: auto;
     object-fit: cover;
-    vertical-align: middle;
-}
-
-.exp-card-illus i{
-    font-size: 32px;
     vertical-align: middle;
 }
 

@@ -1,6 +1,11 @@
 *{
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
 }
 
 :root {
@@ -39,4 +44,33 @@ a{
   text-decoration: none;
   color: black;
   cursor: pointer;
+  user-select: none;
+}
+
+a *{
+  cursor: pointer;
+}
+
+img{
+  user-select: none;
+  pointer-events: none;
+}
+
+button{
+  cursor: pointer;
+  user-select: none;
+}
+
+input, textarea{
+  cursor: text;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus{
+  -webkit-text-fill-color: var(--Primary-Neutral, #404040) !important;
+  -webkit-background-clip: text;
 }

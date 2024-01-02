@@ -1,4 +1,5 @@
 import '../assets/styles/Home.css'
+import SocialButton from './SocialButton'
 
 const Home = () => {
     return (
@@ -17,10 +18,10 @@ const Home = () => {
             </div>
             <div className="home-graphic"></div>
             <div className="home-socials">
-                <a className="social-box"><i className="fa-brands fa-linkedin-in"></i></a>
-                <a className="social-box"><i className="fa-brands fa-github"></i></a>
-                <a className="social-box"><i className="fa-brands fa-x-twitter"></i></a>
-                <a className="social-box"><i className="fa-brands fa-instagram"></i></a>
+                <SocialButton name='linkedin-in' link='https://linkedin.com/in/amnchndr/'/>
+                <SocialButton name='github' link='https://github.com/acdevs/'/>
+                <SocialButton name='x-twitter' link='https://twitter.com/amnchndr'/>
+                <SocialButton name='instagram' link='https://instagram.com/aman.cha.ndra/'/>
             </div>
         </div>
     )

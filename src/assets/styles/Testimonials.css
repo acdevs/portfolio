@@ -1,3 +1,7 @@
+.testimonial *::selection{
+    background-color: #ffc09e;
+    color: #000;
+}
 .testimonial{
     grid-column: 1 / span 12;
     display: grid;
@@ -100,16 +104,16 @@
     margin: 0;
 }
 
-.testimonial-card:nth-of-type(odd){
+.testimonial-card:nth-of-type(even){
     background-color: var(--Primary-Black, #000);
     color: var(--Primary-White, #fff);
 }
 
-.testimonial-card:nth-of-type(odd) .testimonial-card-quote-logo{
+.testimonial-card:nth-of-type(even) .testimonial-card-quote-logo{
     background-image: url("./images/testimonial-quote-light.png");
 }
 
-.testimonial-card:nth-of-type(odd) .testimonial-card-divider{
+.testimonial-card:nth-of-type(even) .testimonial-card-divider{
     background-color: var(--Primary-White, #fff);
 }
 

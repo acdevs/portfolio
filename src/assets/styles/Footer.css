@@ -1,3 +1,7 @@
+.footer *{
+    user-select: none;
+}
+
 .footer{
     grid-column: 1 / span 12;
     background-color: #000;
@@ -7,20 +11,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 0;
-}
-
-.footer-title{
-    grid-column: 2 / span 5;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin: 0;
-}
-
-.footer-title .material-symbols-outlined{
-    margin-right: 4px; 
-    font-size: 32px;
 }
 
 .footer-description{

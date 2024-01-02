@@ -1,4 +1,5 @@
 import '../assets/styles/Skills.css'
+import SkillBadge from './SkillBadge'
 
 const Skills = () => {
     return (
@@ -7,50 +8,17 @@ const Skills = () => {
                 My&nbsp;<span>Skills</span>
             </p>
             <div className="skills-badges-view">
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-git-alt"></i></p>
-                    <p>Git</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-square-js"></i></p>
-                    <p>JavaScript</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-node-js"></i></p>
-                    <p>Node Js</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-react"></i></p>
-                    <p>React</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-css3-alt"></i></p>
-                    <p>CSS</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-bootstrap"></i></p>
-                    <p>Bootstrap</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-sass"></i></p>
-                    <p>Sass/Scss</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-java"></i></p>
-                    <p>Spring Boot</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-php"></i></p>
-                    <p>PHP</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-docker"></i></p>
-                    <p>Docker</p>
-                </div>
-                <div className="skills-badge">
-                    <p><i className="fa-brands fa-aws"></i></p>
-                    <p>AWS/Cloud</p>
-                </div>
+                <SkillBadge skill="Git" />
+                <SkillBadge skill="JavaScript" />
+                <SkillBadge skill="Node Js" />
+                <SkillBadge skill="React" />
+                <SkillBadge skill="CSS" />
+                <SkillBadge skill="Bootstrap" />
+                <SkillBadge skill="Sass/Scss" />
+                <SkillBadge skill="Spring Boot" />
+                <SkillBadge skill="PHP" />
+                <SkillBadge skill="Docker" />
+                <SkillBadge skill="AWS/Cloud" />
             </div>
         </div>
     )

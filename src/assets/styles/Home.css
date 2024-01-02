@@ -1,3 +1,6 @@
+.home *::selection{
+    background-color: #c5fb72;
+}
 .home{
     margin-top: -100px;
     padding-top: 100px;
@@ -57,18 +60,18 @@
     justify-content: start;
 }
 
-.social-box{
+.social-button{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 48px;
     height: 48px;
     margin-right: 24px;
-    border: 3px solid var(--Primary-Black, #000);
+    border: 2px solid var(--Primary-Black, #000);
     font-size: 24px;
 }
 
-.social-box:hover{
+.social-button:hover{
     background-color: var(--Primary-Black, #000);
     color: var(--Primary-White, #fff);
 }

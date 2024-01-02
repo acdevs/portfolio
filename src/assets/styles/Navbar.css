@@ -1,3 +1,6 @@
+.navbar *{
+    user-select: none;
+}
 .navbar {
     height: 100px;
     grid-column: 1 / span 12;
@@ -35,24 +38,19 @@
 .resume-button {
     grid-column: 10 / span 2;
     justify-self: end;
+    display: flex;
+    flex-direction: row;
 }
 
-.resume-button a{
-    background: var(--Primary-Black, #000);
-    color: var(--Primary-White, #fff);
-    padding: 16px 18px;
-    font-size: 16px;
-}
-
-.resume-button a:hover{
-    background: var(--Primary-Neutral, #404040);
+.resume-button a:nth-of-type(2){
+    border-left: 1px solid var(--Primary-Neutral, #404040);
 }
 
 .nav-links {
     grid-column: 5 / span 4;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
 }
