@@ -8,17 +8,17 @@ const Skills = () => {
                 My&nbsp;<span>Skills</span>
             </p>
             <div className="skills-badges-view">
-                <SkillBadge skill="Git" />
-                <SkillBadge skill="JavaScript" />
-                <SkillBadge skill="Node Js" />
-                <SkillBadge skill="React" />
-                <SkillBadge skill="CSS" />
-                <SkillBadge skill="Bootstrap" />
-                <SkillBadge skill="Sass/Scss" />
-                <SkillBadge skill="Spring Boot" />
-                <SkillBadge skill="PHP" />
-                <SkillBadge skill="Docker" />
-                <SkillBadge skill="AWS/Cloud" />
+                <SkillBadge skill="Git" progress='50' />
+                <SkillBadge skill="JavaScript" progress='40' />
+                <SkillBadge skill="Node Js" progress='60' />
+                <SkillBadge skill="React" progress='25' />
+                <SkillBadge skill="CSS" progress='80' />
+                <SkillBadge skill="Bootstrap" progress='30' />
+                <SkillBadge skill="Sass/Scss" progress='20' />
+                <SkillBadge skill="Spring Boot" progress='10' />
+                <SkillBadge skill="PHP" progress='30' />
+                <SkillBadge skill="Docker" progress='20' />
+                <SkillBadge skill="AWS/Cloud" progress='20' />
             </div>
         </div>
     )

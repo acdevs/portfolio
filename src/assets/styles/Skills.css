@@ -50,7 +50,7 @@
     max-width: 160px;
     height: 160px;
     margin: 15px;
-    border: 3px solid var(--Primary-Black, #000);
+    border: 2px solid var(--Primary-Black, #000);
     overflow: hidden;
 }
 
@@ -58,11 +58,25 @@
     font-size: 18px;
     font-weight: 600;
     margin: 8px 0;
+    z-index: 1;
+}
+
+.skills-badge p:nth-of-type(1){
+    position: relative;
+    width: 80px;
+    height: 80px;
 }
 
 .skills-badge .fa-brands, .skills-badge .material-symbols-outlined{
-    font-size: 48px;
-    margin-bottom: 8px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 64px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
 }
 
 .skills-badge:hover{
@@ -83,7 +97,7 @@
 }
 
 .skills-badge:hover .fa-css3-alt{
-    color: #1888d8;
+    color: #2ca6fc;
 }
 
 .skills-badge:hover .fa-sass{
@@ -91,7 +105,7 @@
 }
 
 .skills-badge:hover .fa-bootstrap{
-    color: #7952B3;
+    color: #9e70e3;
 }
 
 .skills-badge:hover .fa-git-alt{
@@ -116,4 +130,103 @@
 
 .skills-badge:hover .fa-figma{
     color: #F24E1E;
+}
+
+.progress-bar {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.skills-badge:hover .progress-bar {
+    display: flex;
+    animation: animate-progress 0.5s 1 ease-in-out forwards;
+}
+.skills-badge:hover .fa-brands{
+    font-size: 42px;
+}
+
+@property --progress-value {
+    syntax: '<integer>';
+    inherits: false;
+    initial-value: 0;
+}
+
+@keyframes animate-progress {
+    to{
+        --progress-value: var(--getProgressValue);
+    }
+}
+
+.react {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#61DBFB calc(var(--progress-value) * 1%), #000 0);
+}
+
+.node-js {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#5ddd5d calc(var(--progress-value) * 1%), #000 0);
+}
+
+.square-js {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#F7DF1E calc(var(--progress-value) * 1%), #000 0);
+}
+
+.css3-alt {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#2ca6fc calc(var(--progress-value) * 1%), #000 0);
+}
+
+.sass {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#CC6699 calc(var(--progress-value) * 1%), #000 0);
+}
+
+.bootstrap {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#9e70e3 calc(var(--progress-value) * 1%), #000 0);
+}
+
+.git-alt {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#F05032 calc(var(--progress-value) * 1%), #000 0);
+}
+
+.java {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#FF0000 calc(var(--progress-value) * 1%), #000 0);
+}
+
+.php {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#777BB4 calc(var(--progress-value) * 1%), #000 0);
+}
+
+.docker {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#2496ed calc(var(--progress-value) * 1%), #000 0);
+}
+
+.aws {
+    background: 
+    radial-gradient(closest-side, #000 90%, transparent 92% 100%),
+    conic-gradient(#ff9a00 calc(var(--progress-value) * 1%), #000 0);
 }

@@ -1,24 +1,31 @@
-import ProtoType from 'prop-types';
+import ProtoType from 'prop-types'
 
-const SkillBadge = ({ skill }) => {
-
+const SkillBadge = ({ skill, progress }) => {
+    
     const faIcons = {
-        'Git' : 'fa-git-alt',
-        'JavaScript' : 'fa-square-js',
-        'Node Js' : 'fa-node-js',
-        'React' : 'fa-react',
-        'CSS' : 'fa-css3-alt',
-        'Bootstrap' : 'fa-bootstrap',
-        'Sass/Scss' : 'fa-sass',
-        'Spring Boot' : 'fa-java',
-        'PHP' : 'fa-php',
-        'Docker' : 'fa-docker',
-        'AWS/Cloud' : 'fa-aws',
+        'Git' : 'git-alt',
+        'JavaScript' : 'square-js',
+        'Node Js' : 'node-js',
+        'React' : 'react',
+        'CSS' : 'css3-alt',
+        'Bootstrap' : 'bootstrap',
+        'Sass/Scss' : 'sass',
+        'Spring Boot' : 'java',
+        'PHP' : 'php',
+        'Docker' : 'docker',
+        'AWS/Cloud' : 'aws',
+    }
+
+    const handleMouseOver = (e) => {
+        e.target.style.setProperty('--getProgressValue', progress)
     }
 
     return (
-        <div className="skills-badge">
-            <p><i className={"fa-brands ".concat(faIcons[skill])}></i></p>
+        <div className="skills-badge" onMouseOver={handleMouseOver}>
+            <p>
+                <i className={"fa-brands fa-".concat(faIcons[skill])}></i>
+                <span className={"progress-bar ".concat(faIcons[skill])}></span>
+            </p>
             <p>{ skill }</p>
         </div>
     );
@@ -26,6 +33,7 @@ const SkillBadge = ({ skill }) => {
 
 SkillBadge.propTypes = {
     skill: ProtoType.string.isRequired,
+    progress: ProtoType.string.isRequired,
 }
 
 export default SkillBadge;
