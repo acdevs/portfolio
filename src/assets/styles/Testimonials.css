@@ -8,6 +8,10 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 0;
+    background-color: var(--Primary-White, #fff);
+    color: var(--Primary-Black, #000);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .testimonial-title{
@@ -31,7 +35,7 @@
     align-items: start;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 32px 0 84px;
+    margin: 30px 0 60px;
 }
 
 .testimonial-card{

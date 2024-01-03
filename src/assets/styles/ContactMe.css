@@ -9,7 +9,11 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 0;
+    background-color: var(--Primary-White, #fff);
+    color: var(--Primary-Black, #000);
     min-height: calc(100vh - 64px);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .contact-form{
@@ -33,18 +37,22 @@
     padding: 16px 24px;
     margin: 8px 0;
     outline: none;
-    border: 1.4px solid var(--Primary-Neutral, #404040);
+    border: 1.5px solid var(--Primary-Neutral, #404040);
     background-color: var(--Primary-White, #fff);
     font-size: 16px;
     font-family: 'Sora', sans-serif;
     color: var(--Primary-Neutral, #404040);
 }
 
-.contact-form input::backdrop{
-    background-color: var(--Primary-White, #fff);
-
+.contact-form .error{
+    border: 1.5px solid var(--Primary-Red, #FF0000);
+    background-color: #fff0f3;
 }
 
+.contact-form button:disabled{
+    background-color: var(--Primary-Neutral, #404040);
+    cursor: not-allowed;
+}
 .contact-form-buttons{
     display: flex;
     flex-direction: row;

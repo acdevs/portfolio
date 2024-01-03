@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0;
-    min-height: calc(100vh);
+    min-height: calc(100vh + 100px);
 }
 
 .projects-title{

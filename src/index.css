@@ -41,6 +41,8 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: var(--Primary-Black, #000);
+  color: var(--Primary-White, #fff);
 }
 
 a{

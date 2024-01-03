@@ -23,6 +23,9 @@ const Home = () => {
                 <SocialButton name='x-twitter' link='https://twitter.com/amnchndr'/>
                 <SocialButton name='instagram' link='https://instagram.com/aman.cha.ndra/'/>
             </div>
+            <div className="home-divider">
+                <div className="home-divider-line"></div>
+            </div>
         </div>
     )
 }
