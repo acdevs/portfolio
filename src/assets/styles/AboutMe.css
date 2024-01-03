@@ -9,7 +9,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 0;
-    padding: 60px 0;
+    padding: 100px 0;
     min-height: calc(100vh);
     border-radius: 100px;
     background-color: var(--Primary-White, #fff);
