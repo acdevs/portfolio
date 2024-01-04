@@ -9,7 +9,7 @@ const ContactMe = () => {
             </div>
             <div className="contact-content">
                 <p className="contact-title">
-                    <span>Let&apos;s talk</span> for<br />
+                    <span>Let&apos;s <span className='contact-highlight'>talk</span></span> for<br />
                     Something <span>Awesome.</span>
                 </p>
                 <p className="contact-description">

@@ -8,6 +8,7 @@ import Experience from './components/Experience'
 import Testimonials from './components/Testimonials'
 import ContactMe from './components/ContactMe'
 import Footer from './components/Footer'
+import TopButton from './components/TopButton'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Testimonials />
       <ContactMe />
       <Footer />
+      <TopButton />
     </>
   )
 }

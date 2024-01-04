@@ -62,9 +62,11 @@
 }
 
 .nav-links a {
+    width: 25%;
     display: flex;
     align-items: center;
-    padding: 0px 18px;
+    justify-content: center;
+    padding: 0px 16px;
     text-decoration: none;
     color: var(--Primary-Black, #000);
     transition: 0.2s ease-in-out;

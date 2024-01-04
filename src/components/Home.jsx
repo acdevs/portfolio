@@ -7,7 +7,7 @@ const Home = () => {
             <div className="home-content">
                 <div>
                     <p className='heading'>Howdy, I&apos;m <span className="home-name">Aman Chandra.</span></p>
-                    <p className='heading'><span className="home-job-title">Full Stack</span> Developer</p>
+                    <p className='heading'><span className="home-job-title">Full Stack</span> <span className='home-highlight'>Developer</span></p>
                     <p className='heading'>Based in <span className="home-location">India.</span></p>
                     <p className='description'>
                     I am a Full Stack Developer with a passion for building web applications and solving problems. 
@@ -23,9 +23,7 @@ const Home = () => {
                 <SocialButton name='x-twitter' link='https://twitter.com/amnchndr'/>
                 <SocialButton name='instagram' link='https://instagram.com/aman.cha.ndra/'/>
             </div>
-            <div className="home-divider">
-                <div className="home-divider-line"></div>
-            </div>
+            <div className="home-divider"></div>
         </div>
     )
 }

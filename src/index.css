@@ -27,7 +27,7 @@
   --Primary-Neutral: #404040;
   --Primary-White: #fff;
   --Primary-Blue: #007bff;
-  --Primary-Red: #dc3545;
+  --Primary-Red: #ff0019;
   --Primary-Green: #28a745;
   --Primary-Yellow: #ffc107;
   --Primary-Orange: #fd7e14;
@@ -78,4 +78,39 @@ textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus{
   -webkit-text-fill-color: var(--Primary-Neutral, #404040) !important;
   -webkit-background-clip: text;
+}
+
+#top-button-root{
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 0;
+  right: 0;
+  margin: 24px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Primary-White, #fff);
+  background-color:var(--Primary-Black, #000);
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#top-button-root i{
+  font-size: 24px;
+  cursor: pointer;
 }

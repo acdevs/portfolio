@@ -1,7 +1,8 @@
 .home *::selection{
-    /* background-color: #c5fb72; */
-    background-color: #75b99c;
+    background-color: #fcb866;
+    color: #000;
 }
+
 .home{
     margin-top: -100px;
     padding-top: 100px;
@@ -10,8 +11,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 0;
-    min-height: calc(100vh + 100px);
-    padding-bottom: 100px;
+    min-height: calc(100vh);
     background-color: var(--Primary-White, #fff);
     color: var(--Primary-Black, #000);
 }
@@ -22,7 +22,13 @@
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    justify-items: center;
+}
+
+.home-highlight{
+    background-color: #f7a644;
+    font-weight: normal !important;
 }
 
 .home-content p.heading{
@@ -51,13 +57,14 @@
 .home-graphic{
     grid-column: 8 / span 4;
     grid-row: 1 / span 5;
-    background-size: 125%;
+    background-image: url(./images/home_graphic2.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .home-socials{
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
     grid-row: 6 / span 1;
     display: flex;
     align-items: center;
@@ -71,7 +78,7 @@
     width: 48px;
     height: 48px;
     margin-right: 24px;
-    border: 2px solid var(--Primary-Black, #000);
+    border: 3px solid var(--Primary-Black, #000);
     font-size: 24px;
 }
 
@@ -85,15 +92,12 @@
 }
 
 .home-divider{
-    grid-column: 6 / span 6;
+    grid-column: 5 / span 7;
     grid-row: 6 / span 1;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.home-divider-line{
-    width: 100%;
-    height: 2px;
-    background-color: var(--Primary-Black, #000);
+    background-image: url(./images/black_curly_divider.jpg);
+    background-size: 75%;
+    background-position: center;
 }

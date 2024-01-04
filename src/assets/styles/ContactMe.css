@@ -102,6 +102,10 @@
     font-weight: 700;
 }
 
+.contact-highlight{
+    background-color: #f38ba4;
+}
+
 .contact-description{
     font-size: 16px;
     color: var(--Zinc-500, #71717A);
