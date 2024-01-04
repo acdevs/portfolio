@@ -2,32 +2,77 @@
     user-select: none;
 }
 
-.footer{
-    grid-column: 1 / span 12;
-    background-color: #000;
-    color: #fff;
-    padding: 24px 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    gap: 0;
+@media only screen and (min-width: 1024px) {
+
+    .footer{
+        grid-column: 1 / span 12;
+        background-color: #000;
+        color: #fff;
+        padding: 24px 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        gap: 0;
+    }
+
+    .footer-description{
+        grid-column: 7 / span 5;
+        font-size: 16px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .footer-description p{
+        margin: 2.5px 0;
+    }
+
+    .footer-description .fa-solid{
+        font-size: 16px;
+        margin: 0 4px;
+    }
+
 }
 
-.footer-description{
-    grid-column: 7 / span 5;
-    font-size: 16px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin: 0;
-}
+/* for mobiles and tablets */
 
-.footer-description p{
-    margin: 2.5px 0;
-}
+@media only screen and (max-width: 1024px) {
 
-.footer-description .fa-solid{
-    font-size: 16px;
-    margin: 0 4px;
+    .footer{
+        grid-column: 1 / span 12;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-description{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .footer .brand-icon{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-description p{
+        margin: 1.5px 0;
+    }
+    
+    .footer-description .fa-solid{
+        font-size: 12px;
+        margin: 0 4px;
+    }
+
 }

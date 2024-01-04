@@ -10,7 +10,7 @@ const ContactMe = () => {
             <div className="contact-content">
                 <p className="contact-title">
                     <span>Let&apos;s <span className='contact-highlight'>talk</span></span> for<br />
-                    Something <span>Awesome.</span>
+                    Something <span>Awesome</span>
                 </p>
                 <p className="contact-description">
                     I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.

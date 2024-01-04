@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
   cursor: default;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 ::-webkit-scrollbar {
@@ -88,7 +90,7 @@ textarea:-webkit-autofill:focus{
   right: 0;
   margin: 24px;
   z-index: 100;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: var(--Primary-White, #fff);

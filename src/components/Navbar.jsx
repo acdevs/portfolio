@@ -4,6 +4,7 @@ import NavLinks from './NavLinks'
 import ResumeButton from './ResumeButton'
 
 const Navbar = () => {
+
     return (
         <div className='navbar'>
             <BrandIcon name='Personal'/>

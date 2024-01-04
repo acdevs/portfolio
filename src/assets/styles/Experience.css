@@ -1,102 +1,205 @@
 .experience *::selection{
-    background-color: #a072fb;
+    background-color: #fcf485;
     color: #000;
 }
 
-.experience{
-    grid-column: 1 / span 12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    gap: 0;
-    background-color: var(--Primary-Black, #000);
-    color: var(--Primary-White, #fff);
+@media only screen and (min-width: 768px) {
+
+    .experience{
+        grid-column: 1 / span 12;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        gap: 0;
+        background-color: var(--Primary-Black, #000);
+        color: var(--Primary-White, #fff);
+    }
+
+    .experience-title{
+        grid-column: 2 / span 10;
+        grid-row: 1 / span 1;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+    }
+
+    .experience-title span{
+        font-weight: 700;
+    }
+
+
+    .experience-view *{
+        user-select: none;
+    }
+
+    .experience-view{
+        grid-column: 2 / span 10;
+        display: flex;
+        align-content: start;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 32px 0 84px;
+    }
+
+    .experience-card{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        min-width: 100%;
+        margin: 16px 0;
+        border: 2px solid var(--Zinc-500, #71717A);
+        border-radius: 8px;
+        padding: 32px 24px;
+    }
+
+    .exp-card-title{
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+
+    .exp-card-illus{
+        margin-right: 25px;
+    }
+
+    .exp-card-illus img{
+        height: 38px;
+        width: auto;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+
+    .exp-card-name{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+
+    .exp-card-duration{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--Zinc-300, #D4D4D8);
+        margin: 0;
+    }
+
+    .exp-card-description{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: var(--Zinc-300, #D4D4D8);
+        text-align: justify;
+        margin: 0;
+    }
 }
 
-.experience-title{
-    grid-column: 2 / span 10;
-    grid-row: 1 / span 1;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-}
+/* for mobiles and tablets */
 
-.experience-title span{
-    font-weight: 700;
-}
+@media only screen and (max-width: 1024px) {
 
+    .experience{
+        grid-column: 1 / span 12;
+        width: 100%;
+        background-color: var(--Primary-Black, #000);
+        color: var(--Primary-White, #fff);
+        padding: 40px 16px;
+    }
 
-.experience-view *{
-    user-select: none;
-}
+    .experience-title{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        padding: 20px 0;
+    }
 
-.experience-view{
-    grid-column: 2 / span 10;
-    display: flex;
-    align-content: start;
-    align-items: start;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 32px 0 84px;
-}
-
-.experience-card{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    min-width: 100%;
-    margin: 16px 0;
-    border: 2px solid var(--Zinc-500, #71717A);
-    border-radius: 8px;
-    padding: 32px 24px;
-}
-
-.exp-card-title{
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 28px;
-}
-
-.exp-card-illus{
-    margin-right: 25px;
-}
-
-.exp-card-illus img{
-    height: 38px;
-    width: auto;
-    object-fit: cover;
-    vertical-align: middle;
-}
-
-.exp-card-name{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 24px;
-    flex-grow: 1;
-    margin: 0;
-}
+    .experience-title span{
+        font-weight: 700;
+    }
 
 
-.exp-card-duration{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    color: var(--Zinc-300, #D4D4D8);
-    margin: 0;
-}
+    .experience-view *{
+        user-select: none;
+    }
 
-.exp-card-description{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
-    color: var(--Zinc-300, #D4D4D8);
-    text-align: justify;
-    margin: 0;
+    .experience-view{
+        grid-column: 2 / span 10;
+        display: flex;
+        align-content: start;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .experience-card{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        min-width: 100%;
+        margin: 16px 0;
+        border: 2px solid var(--Zinc-500, #71717A);
+        border-radius: 16px;
+        padding: 30px 24px;
+    }
+
+    .exp-card-title{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 28px;
+    }
+
+    .exp-card-illus{
+        justify-self: flex-start;
+        align-self: flex-start;
+    }
+
+    .exp-card-illus img{
+        height: 32px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .exp-card-name{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        align-self: flex-start;
+        margin: 8px 0;
+    }
+
+
+    .exp-card-duration{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--Zinc-300, #D4D4D8);
+        margin: 0;
+    }
+
+    .exp-card-description{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: var(--Zinc-300, #D4D4D8);
+        margin: 0;
+    }
+    
 }
