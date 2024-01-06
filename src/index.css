@@ -1,8 +1,8 @@
 *{
   box-sizing: border-box;
-  cursor: default;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  cursor: url(../public/images/default_cursor.png) 0 0, auto;
 }
 
 ::-webkit-scrollbar {
@@ -50,12 +50,7 @@ body{
 a{
   text-decoration: none;
   color: black;
-  cursor: pointer;
   user-select: none;
-}
-
-a *{
-  cursor: pointer;
 }
 
 img{
@@ -64,12 +59,7 @@ img{
 }
 
 button{
-  cursor: pointer;
   user-select: none;
-}
-
-input, textarea{
-  cursor: text;
 }
 
 input:-webkit-autofill,
@@ -97,7 +87,6 @@ textarea:-webkit-autofill:focus{
   background-color:var(--Primary-Black, #000);
   border-radius: 50%;
   transition: 0.2s ease-in-out;
-  cursor: pointer;
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -114,5 +103,4 @@ textarea:-webkit-autofill:focus{
 
 #top-button-root i{
   font-size: 24px;
-  cursor: pointer;
 }

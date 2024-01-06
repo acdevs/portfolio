@@ -56,7 +56,7 @@
     .home-graphic{
         grid-column: 8 / span 4;
         grid-row: 1 / span 5;
-        background-image: url(./images/home_graphic2.jpg);
+        background-image: url(../../../public/images/home_graphic2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -96,7 +96,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url(./images/black_curly_divider.jpg);
+        background-image: url(../../../public/images/black_curly_divider.jpg);
         background-repeat: repeat-x;
         background-size: 80%;
         background-position: center left;
@@ -118,7 +118,7 @@
         order: 1;
         width: 100%;
         height: 320px;
-        background-image: url(./images/home_graphic2.jpg);
+        background-image: url(../../../public/images/home_graphic2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

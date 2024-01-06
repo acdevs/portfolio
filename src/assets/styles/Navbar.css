@@ -89,7 +89,7 @@
 
     .nav-links a::after{
         display: none;
-        content: url(./images/navlink-hover-scribble.png);
+        content: url(../../../public/images/navlink-hover-scribble.png);
         position: absolute;
         transform: scale(1);
         max-width: 100%;
