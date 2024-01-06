@@ -158,7 +158,7 @@
         outline: none;
     }
     
-    .button-rectangle:hover{
+    .button-rectangle:active{
         background-color: var(--Primary-Neutral, #404040);
     }
 

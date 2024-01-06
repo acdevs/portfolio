@@ -16,12 +16,8 @@ const SkillBadge = ({ skill, progress }) => {
         'AWS/Cloud' : 'aws',
     }
 
-    const handleMouseOver = (e) => {
-        e.target.style.setProperty('--getProgressValue', progress)
-    }
-
     return (
-        <div className="skills-badge" onMouseOver={handleMouseOver}>
+        <div className="skills-badge" style={{ '--getProgressValue': progress }}>
             <p>
                 <i className={"fa-brands fa-".concat(faIcons[skill])}></i>
                 <span className={"progress-bar ".concat(faIcons[skill])}></span>

@@ -225,7 +225,7 @@
         color: #fff;
     }
     
-    .project-links a:hover{
+    .project-links a:active{
         background-color: #303030
     }
 

@@ -185,7 +185,7 @@
         margin-right: 0;
     }
 
-    .social-button:hover{
+    .social-button:active{
         background-color: var(--Primary-Black, #000);
         color: var(--Primary-White, #fff);
     }
